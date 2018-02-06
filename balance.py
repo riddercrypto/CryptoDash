@@ -36,7 +36,7 @@ def get_balances_all_knights():
         df['datetime'] = dt.datetime.now()
     # maak een connectie met de database en update de tabel voor de knight
         engine = create_engine('postgresql://postgres:@localhost:5432/cryptoChallenge')
-        df.to_sql(knight[1], engine, if_exists = 'replace', index = False )
+        df.to_sql(knight[1], engine, if_exists = 'append', index = False )
 
 knights = get_knights()
 get_balances_all_knights()
