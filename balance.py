@@ -1,6 +1,5 @@
 from binance.client import Client
 import pandas as pd
-import pprint
 import psycopg2
 from sqlalchemy import create_engine
 import datetime as dt
