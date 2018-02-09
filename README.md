@@ -10,3 +10,7 @@ Crypto Challenge 2018 in Dash framework
   - Stel de frequentie van de job in: /10 * * * * 
   - Navigeer naar de project folder: cd /home/wouter/PycharmProjects/Dash 
   - Run python vanuit je virtualenv, open de file: && dashvenv/bin/python balance.py
+  
+# balance.py
+Dit script haalt voor elke knight iedere 10 minuten het aantal per token op via de binance api.
+Dit wordt vervolgens opgeslagen in de database tabel voor de respectievelijke knight.
