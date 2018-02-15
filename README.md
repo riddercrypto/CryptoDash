@@ -1,10 +1,16 @@
+#https://moderndata.plot.ly/create-a-plotly-dashboards-in-under-10-minutes/
+
 # CryptoDash
 Crypto Challenge 2018 in Dash framework
 
--- cron job
-in terminal: crontab -e volgende regel toevoegen:
+# cron job
+- Terminal: crontab -e 
+- volgende regel aan de file toevoegen toevoegen:
 /10 * * * * cd /home/wouter/PycharmProjects/Dash && dashvenv/bin/python balance.py
-
-# /10 * * * * betekent dat de job elke 10 minuten loopt
-# cd /home/wouter/PycharmProjects/Dash navigeer naar de project folder
-# && dashvenv/bin/python balance.py nadat er naar de map is genavigeert activeer the de python van de virtual environment en run je de pythont file
+  - Stel de frequentie van de job in: /10 * * * * 
+  - Navigeer naar de project folder: cd /home/wouter/PycharmProjects/Dash 
+  - Run python vanuit je virtualenv, open de file: && dashvenv/bin/python balance.py
+  
+# balance.py
+Dit script haalt voor elke knight iedere 10 minuten het aantal per token op via de binance api.
+Dit wordt vervolgens opgeslagen in de database tabel voor de respectievelijke knight.
