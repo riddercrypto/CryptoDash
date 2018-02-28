@@ -1,0 +1,5 @@
+#Github - Pandas -Useful Snippets-
+https://gist.github.com/bsweger/e5817488d161f37dcbd2
+
+#Milliseconds timestamp to readable format
+datetime.datetime.fromtimestamp(ms/1000.0)
