@@ -31,7 +31,7 @@ MarkupSafe==1.0
 more-itertools==4.1.0
 nbformat==4.4.0
 ndg-httpsclient==0.4.4
-numpy==1.14.0
+numpy==1.22.0
 pandas==0.22.0
 plotly==2.3.0
 pprint==0.1
